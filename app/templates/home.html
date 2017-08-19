@@ -1,8 +1,8 @@
 
 <nav class="side-nav"> 
-    <h1>Bloc Chat</h1>
-    <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</span>
+    <h1 class="main-title">Bloc Chat</h1>
+    <h4><strong>Channels</strong><span class="new-room-button" type="button" ng-click="home.addRoom()"><i class="fa fa-plus-square-o text-primary-color cta-hover"  aria-hidden="true"></i></span></h4>
     <div ng-repeat="room in home.rooms">
-    <h4>{{ room.$value }}</h4>
+    <h6 class="cta-hover">{{ room.$value }}</h6>
     </div>
 </nav>
