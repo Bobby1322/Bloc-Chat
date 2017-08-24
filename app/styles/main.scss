@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+$dark-primary: #455A64;
+$default-primary-color: #607D8B;
+.default-primary-color { background: #607D8B; }
+$light-primary-color: #CFD8DC;
+$text-primary-color: #FFFFFF; 
+$accent-color: #FFC107; 
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.row {
+    height: 100vh;
+}
+
+.side-nav {
+    background-color: $default-primary-color;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding-left: 15px;
+    float: left;
+}
+
+.side-nav .main-title {
+color: $text-primary-color;
+margin-bottom: 20px;
+}
+
+.side-nav h4 {
+color:$text-primary-color;
+}
+.side-nav h6 {
+color: $text-primary-color;
+}
+
+.side-nav .new-room-button {
+color: $text-primary-color;
+margin-right: 15px;
+padding: 5px 10px 5px 10px;
+}
+
+.cta-hover:hover {
+    color: $accent-color;
+}
+
+.chat-area {
+    background-color: $light-primary-color;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.chat-area .chat-area-title h3 {
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.chat-area .username {
+    font-weight: bold;
+}
+.chat-area .timestamp {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 0.6em;
+}
