@@ -14,7 +14,6 @@ html {
 
 $dark-primary: #455A64;
 $default-primary-color: #607D8B;
-.default-primary-color { background: #607D8B; }
 $light-primary-color: #CFD8DC;
 $text-primary-color: #FFFFFF; 
 $accent-color: #FFC107; 
@@ -47,27 +46,54 @@ color:$text-primary-color;
 color: $text-primary-color;
 }
 
+.side-nav a{
+    text-decoration: none;
+    color: $text-primary-color;
+}
+.side-nav a:focus{
+    text-decoration: none;
+    color: $text-primary-color;
+}
+.side-nav a:active{
+    text-decoration: none;
+    color: $text-primary-color;
+}
+
+
+
 .side-nav .new-room-button {
 color: $text-primary-color;
-margin-right: 15px;
 padding: 5px 10px 5px 10px;
 }
 
 .cta-hover:hover {
     color: $accent-color;
+    text-decoration: none;
+}
+
+.room-list {
+    padding-left: 10px;
 }
 
 .chat-area {
-    background-color: $light-primary-color;
     float: left;
     height: 100%;
     position: relative;
 }
 
+.chat-area .messages-area {
+    padding: 5px;
+
+}
+
+.chat-area .messages-area:hover {
+    background: $light-primary-color;
+}
+
+
 .chat-area .chat-area-title h3 {
     text-align: left;
     margin-bottom: 30px;
-
 }
 
 .chat-area .username {

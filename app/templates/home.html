@@ -3,9 +3,11 @@
     <div class="row">
         <nav class="side-nav col-sm-3"> 
             <h1 class="main-title">Bloc Chat</h1>
-            <h4><strong>Channels</strong><span class="new-room-button" type="button" ng-click="home.addRoom()"><i class="fa fa-plus-square-o text-primary-color cta-hover"  aria-hidden="true"></i></span></h4>
+            <h4><strong><a href="#rooms" data-toggle="collapse" class="cta-hover">Channels</a></strong><span class="new-room-button" type="button" ng-click="home.addRoom()"><i class="fa fa-plus-square-o text-primary-color cta-hover"  aria-hidden="true"></i></span></h4>
+            <div id="rooms" class="collapse">
             <div ng-repeat="room in home.rooms">
-            <h6 class="cta-hover" ng-click="home.setCurrentRoom(room)">{{ room.$value }}</h6>
+            <h6 class="cta-hover room-list" ng-click="home.setCurrentRoom(room)">{{ room.$value }}</h6>
+            </div>
             </div>
         </nav>
 
