@@ -20,6 +20,17 @@
             console.log(home.messages);
             console.log(home.currentUser);
         }
+
+        
+
+        home.sendMessage = function () {
+            home.newMessage.roomId = home.currentRoom.$id;
+            home.newMessage.username = home.currentUser;
+            home.newMessage.sentAt = firebase.database.ServerValue.TIMESTAMP;;
+            Message.send(home.newMessage);
+            console.log(home.newMessage.sentAt);
+            home.newMessage.content = null;
+        }   
         
     }
     

@@ -13,10 +13,11 @@ html {
 }
 
 $dark-primary: #455A64;
-$default-primary-color: #607D8B;
+$default-primary-color: #0985c8;
 $light-primary-color: #CFD8DC;
 $text-primary-color: #FFFFFF; 
-$accent-color: #FFC107; 
+$accent-color: #db6026; 
+$accent-color-dark:#BA5220;
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
@@ -26,12 +27,14 @@ $accent-color: #FFC107;
 }
 
 .side-nav {
-    background-color: $default-primary-color;
-    top: 0px;
-    left: 0px;
+    position: fixed;
     height: 100%;
+    background-color: $default-primary-color;
+    bottom: 0px;
+    left: 0px;
     padding-left: 15px;
     float: left;
+    width: 25%;
 }
 
 .side-nav .main-title {
@@ -70,6 +73,10 @@ padding: 5px 10px 5px 10px;
     color: $accent-color;
     text-decoration: none;
 }
+.cta-hover-dark:hover {
+    background-color: $accent-color-dark;
+    text-decoration: none;
+}
 
 .room-list {
     padding-left: 10px;
@@ -103,4 +110,24 @@ padding: 5px 10px 5px 10px;
     font-weight: lighter;
     font-style: italic;
     font-size: 0.6em;
+}
+
+.message-area {
+    margin-bottom: 80px;
+}
+
+.message-bar {
+    position: fixed;
+    bottom: 0px;
+    width: 80%;
+    padding: 15px;
+    background-color: white;
+}
+
+.message-bar-button {
+    width: 10%;
+    background-color:$accent-color;
+    color: white;
+    border: none;
+    padding: 3px;
 }
